@@ -31,7 +31,7 @@
         <nav>
           <ul class="header">
             <li class="header-list-item">
-              <a href="./index.html" class="header-link active">Студия</a>
+              <a href="./index.html" class="header-link active current">Студия</a>
             </li>
             <li class="header-list-item">
               <a href="./portfolio.html" class="header-link">Портфолио</a>
@@ -60,7 +60,7 @@
           <h1 class="solutions">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="main-button">Заказать услугу</button>
+          <button class="main-button type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -121,9 +121,18 @@
         <div class="container">
         <h2 class="activity-title">Чем мы занимаемся</h2>
         <ul class="activity-description">
-          <li class="activity-description-item"><img src="images/box_1.jpg" alt="code" width="370" /></li>
-          <li class="activity-description-item"><img src="images/box_2.jpg" alt="code" width="370" /></li>
-          <li class="activity-description-item"><img src="images/box_3.jpg" alt="code" width="370" /></li></div>
+          <li class="activity-description-item"><img src="images/box_1.jpg" alt="десктопные приложения" width="370" />
+            <div class="activity-description-box">
+              <h3 class="activity-h3">Десктопные приложения</h3>
+            </div>
+          </li>
+          <li class="activity-description-item"><img src="images/box_2.jpg" alt="мобильные приложения" width="370" />
+          <div class="activity-description-box">
+              <h3 class="activity-h3">Мобильные приложения</h3>
+            </div></li>
+          <li class="activity-description-item"><img src="images/box_3.jpg" alt="мобильные приложения" width="370" /><div class="activity-description-box">
+              <h3 class="activity-h3">Дизайнерские решения</h3>
+            </div></li>
         </ul>
       </section>
       <!--our-team-section-->
@@ -306,6 +315,18 @@
 </div>
 </section>
 
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+<svg width="11px" height="11px">
+  <use href="./images/symbol-defs.svg#icon-Vector-1"
+  ></use>
+</svg>
+
+        </button>
+      </div>
+    </div>
+    
     </main>
     <footer class="footer-container">
       <div class="container footer-flex">
@@ -360,5 +381,8 @@
       
     </div>
     </footer>
+
+    
+    <script src="./js/modal.js"></script>
   </body>
 </html>
